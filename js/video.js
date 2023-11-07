@@ -12,7 +12,7 @@ document.querySelector("#play").addEventListener("click", function() {
 
 	video.play();
 	// update volume info
-	document.querySelector("#volume").innerHTML = video.volume * 100;
+	document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 });
 
 // pause button
@@ -71,7 +71,7 @@ document.querySelector("#slider").addEventListener("change", function() {
 	video.volume = this.value / 100;
 
 	// update the volume information
-	document.querySelector("#volume").innerHTML = video.volume * 100;
+	document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 })
 
 // styled button
